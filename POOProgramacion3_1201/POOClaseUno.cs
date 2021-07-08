@@ -17,6 +17,8 @@ namespace POOProgramacion3_1201
             InitializeComponent();
         }
 
+        List<Persona> persoLista = new List<Persona>();
+
         private void Btn_probar_Click(object sender, EventArgs e)
         {
             //Persona Norma = new Persona();
@@ -32,6 +34,40 @@ namespace POOProgramacion3_1201
             Persona Allan = new Persona(Txt_nombre.Text, Txt_apellido.Text, Convert.ToInt32(Txt_edad.Text), Txt_direccion.Text);
             MessageBox.Show(Allan.DevolverNombreCompleto());
             MessageBox.Show(Allan.DevolverDireccion());
+        }
+
+        private void Btn_lista_Click(object sender, EventArgs e)
+        {
+            List<string> personas = new List<string>();
+
+            personas.Add("Allan");
+            personas.Add("Norma");
+            personas.Add("Gustavo");
+            personas.Add("Adita");
+            personas.Add("Ana");
+
+            foreach (var item in personas)
+            {
+                MessageBox.Show(item);
+            }
+        }
+
+        private void Btn_agregar_Click(object sender, EventArgs e)
+        {
+            //Agregar al dataGridView
+            Persona persona = new Persona(Txt_nombre.Text, Txt_apellido.Text, Convert.ToInt32(Txt_edad.Text),Txt_direccion.Text);
+
+            persoLista.Add(persona);
+
+            DGV_listaPersonas.DataSource = null;
+            DGV_listaPersonas.DataSource = persoLista;
+
+            //Limpiar TextBox
+            Txt_nombre.Clear();
+            Txt_apellido.Clear();
+            Txt_edad.Clear();
+            Txt_direccion.Clear();
+
         }
     }
 }
