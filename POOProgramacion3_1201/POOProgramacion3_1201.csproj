@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LINQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LINQ.Designer.cs">
+      <DependentUpon>LINQ.cs</DependentUpon>
+    </Compile>
     <Compile Include="Persona.cs" />
     <Compile Include="POOClaseUno.cs">
       <SubType>Form</SubType>
@@ -55,6 +61,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="LINQ.resx">
+      <DependentUpon>LINQ.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="POOClaseUno.resx">
       <DependentUpon>POOClaseUno.cs</DependentUpon>
     </EmbeddedResource>

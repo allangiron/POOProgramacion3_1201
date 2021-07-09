@@ -42,6 +42,11 @@ namespace POOProgramacion3_1201
             this.DGV_listaPersonas = new System.Windows.Forms.DataGridView();
             this.Btn_agregar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.btn_mayoresEdad = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.CB_mayoresEdad = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.CB_menoresEdad = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_listaPersonas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -164,11 +169,64 @@ namespace POOProgramacion3_1201
             this.label5.TabIndex = 6;
             this.label5.Text = "Lista ";
             // 
+            // btn_mayoresEdad
+            // 
+            this.btn_mayoresEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_mayoresEdad.Location = new System.Drawing.Point(458, 126);
+            this.btn_mayoresEdad.Name = "btn_mayoresEdad";
+            this.btn_mayoresEdad.Size = new System.Drawing.Size(84, 49);
+            this.btn_mayoresEdad.TabIndex = 7;
+            this.btn_mayoresEdad.Text = "Mayores Edad";
+            this.btn_mayoresEdad.UseVisualStyleBackColor = true;
+            this.btn_mayoresEdad.Click += new System.EventHandler(this.btn_mayoresEdad_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(563, 245);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(123, 17);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Mayores de Edad";
+            // 
+            // CB_mayoresEdad
+            // 
+            this.CB_mayoresEdad.FormattingEnabled = true;
+            this.CB_mayoresEdad.Location = new System.Drawing.Point(535, 276);
+            this.CB_mayoresEdad.Name = "CB_mayoresEdad";
+            this.CB_mayoresEdad.Size = new System.Drawing.Size(170, 21);
+            this.CB_mayoresEdad.TabIndex = 9;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(566, 126);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(84, 49);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Menores Edad";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // CB_menoresEdad
+            // 
+            this.CB_menoresEdad.FormattingEnabled = true;
+            this.CB_menoresEdad.Location = new System.Drawing.Point(535, 323);
+            this.CB_menoresEdad.Name = "CB_menoresEdad";
+            this.CB_menoresEdad.Size = new System.Drawing.Size(170, 21);
+            this.CB_menoresEdad.TabIndex = 11;
+            // 
             // POOClaseUno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(664, 450);
+            this.ClientSize = new System.Drawing.Size(749, 450);
+            this.Controls.Add(this.CB_menoresEdad);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.CB_mayoresEdad);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btn_mayoresEdad);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Btn_agregar);
             this.Controls.Add(this.DGV_listaPersonas);
@@ -183,6 +241,7 @@ namespace POOProgramacion3_1201
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Btn_probar);
             this.Name = "POOClaseUno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.DGV_listaPersonas)).EndInit();
             this.ResumeLayout(false);
@@ -205,6 +264,11 @@ namespace POOProgramacion3_1201
         private System.Windows.Forms.DataGridView DGV_listaPersonas;
         private System.Windows.Forms.Button Btn_agregar;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btn_mayoresEdad;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox CB_mayoresEdad;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox CB_menoresEdad;
     }
 }
 

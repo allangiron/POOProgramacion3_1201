@@ -69,5 +69,27 @@ namespace POOProgramacion3_1201
             Txt_direccion.Clear();
 
         }
+
+
+        //LINQ
+        private void btn_mayoresEdad_Click(object sender, EventArgs e)
+        {
+            var ListaTemporal = persoLista.Where(a => a.Edad >= 18).ToList();
+
+            foreach (var item in ListaTemporal)
+            {
+                CB_mayoresEdad.Items.Add(item.Nombre);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var ListaTemporal = persoLista.Where(a => a.Edad <= 18).ToList();
+
+            foreach (var item in ListaTemporal)
+            {
+                CB_menoresEdad.Items.Add(item.Nombre);
+            }
+        }
     }
 }
